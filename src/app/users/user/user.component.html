@@ -1,0 +1,12 @@
+<p>User with ID {{user.id}} loaded.</p>
+<p>User name is {{user.name}}</p>
+
+<!--
+  1.by now , the component is already loaded
+  so if we click the below link it will not
+  update any data by default
+  2.to make this happen, we need to subscribe
+  to router params.to update data when ever we try
+  to update route parameter from same component
+-->
+<a [routerLink]="['/users',2,'apple']">load user apple(2)</a>
